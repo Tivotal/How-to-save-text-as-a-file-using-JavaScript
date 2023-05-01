@@ -1,0 +1,143 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: #4070f4;
+}
+
+.wrapper {
+  width: 443px;
+  background: #fff;
+  padding: 30px 25px 40px;
+  border-radius: 7px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.wrapper textarea,
+.wrapper input,
+.wrapper select,
+.wrapper button {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+.wrapper textarea::placeholder,
+.wrapper input::placeholder {
+  color: #aaa;
+}
+
+.wrapper textarea:focus,
+.wrapper input:focus {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.wrapper textarea {
+  height: 270px;
+  font-size: 17.6px;
+  padding: 8px 13px;
+  border: 1px solid #ccc;
+}
+
+.wrapper .file-options {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper .file-options .option {
+  width: calc(100% / 2 - 8px);
+}
+
+.wrapper .file-options .option label {
+  font-size: 17px;
+}
+
+.wrapper .file-options .option input,
+.wrapper .file-options .option .select-menu {
+  height: 50px;
+  padding: 0 13px;
+  border-radius: 5px;
+  margin-top: 6px;
+  border: 1px solid #bfbfbf;
+}
+
+.wrapper .file-options .option .select-menu select {
+  height: 50px;
+  background: none;
+}
+
+.wrapper .btn {
+  margin-top: 20px;
+  background: #4070f4;
+  padding: 16px 0;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.wrapper .btn:hover {
+  background: #173ea9;
+}
+
+.wrapper textarea:valid ~ .btn {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.wrapper textarea::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.wrapper textarea::-webkit-scrollbar-track {
+  background: #d9d9d9;
+}
+
+.wrapper textarea::-webkit-scrollbar-thumb {
+  background: #4070f4;
+  border-radius: 2rem;
+}
+
+@media (max-width: 475px) {
+  .wrapper {
+    padding: 25px 18px 30px;
+  }
+
+  .wrapper textarea,
+  .wrapper input,
+  .wrapper select,
+  .wrapper button {
+    font-size: 16px;
+  }
+
+  .wrapper .file-options .option {
+    width: calc(100% / 2 - 5px);
+  }
+
+  .wrapper .file-options .option input,
+  .wrapper .file-options .option .select-menu {
+    padding: 0 10px;
+  }
+
+  .wrapper .btn {
+    padding: 15px 0;
+  }
+}
